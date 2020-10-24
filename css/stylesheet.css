@@ -35,7 +35,17 @@
 
 .projects h1{text-align:center; margin: 60px;}
 .projects h2{text-align:center; margin: 60px;}
-iframe{margin-left: auto; margin-right: auto; display: block;}
+
+.carousel{position: relative;}
+.d-block{opacity: 80%;}
+
+.carousel-control-prev{position: absolute; height:50px; width:50px; border-radius:100%; background-color:#294636; left:-9%; top: calc(50% - 25px);}
+.carousel-control-next{position: absolute; height:50px; width:50px; border-radius:100%; background-color:#294636; right:-9%; top: calc(50% - 25px);}
+
+.carousel-caption{display: block; left:0; width: 100%; background-color: #294636;}
+.carousel-caption:hover{opacity: unset;}
+
+.carousel-caption a{color: whitesmoke; font-weight: bold;}
 
 .contact{text-align: center;}
 .contact h1{text-align:center; margin: 60px;}
