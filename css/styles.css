@@ -1,0 +1,503 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Asap', sans-serif;
+  color: #08163d;
+}
+
+h1{
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header{
+  position: absolute;
+  z-index: 1;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.img-home{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.page{
+  background-color: whitesmoke;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-bv{
+  border-radius: 100%;
+  width: 60%;
+  margin: 5vh 0 5vh;
+}
+
+.carousel{
+  background-color: #08163d;
+  color: whitesmoke;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-title{
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #08163d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+
+.carousel-title h1{
+  font-size: 3rem;
+}
+
+.carousel-slide{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 250ms ease-in;
+}
+
+
+.carousel-img{
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.carousel-img-3{
+  width: 80%;
+  height: 20%;
+  object-fit: cover;
+}
+
+.slide-info{
+  padding: 0 4%;
+}
+
+.slide-info p{
+  margin: 0;
+}
+
+.fas{
+  margin-left: 1%;
+}
+
+.carousel-slide a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.carousel-slide a:hover{
+  color: #003852;
+}
+
+.carousel h1{
+  margin-bottom: 5vw;
+}
+
+.carousel-buttons{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.make-absolute{
+  position: absolute;
+}
+
+.carousel-left{
+  height: 10%;
+  width: 40%;
+  background-color:#0d225c;
+  color: whitesmoke;
+  border-style: none;
+  font-family: 'Rock Salt', cursive;
+  cursor: pointer;
+}
+
+.carousel-right{
+  height: 10%;
+  width: 40%;
+  background-color: #0d225c;
+  color: whitesmoke;
+  border-style: none;
+  font-family: 'Rock Salt', cursive;
+  cursor: pointer;
+}
+
+.carousel-left:hover{
+  background-color: #003852;
+  border-style: none;
+  color: whitesmoke;
+}
+
+.carousel-right:hover{
+  background-color: #003852;
+  border-style: none;
+  color: whitesmoke;
+}
+
+.button-hidden{
+  background-color: unset;
+  border-style: none;
+}
+.button-hidden:hover{
+  background-color: unset;
+  border-style: none;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.employer{
+  width: 100%;
+  border-bottom: 5px solid;
+  margin-bottom: 10%;
+}
+
+.position{
+  width: 100%;
+  padding-left: 2%;
+  margin-bottom: 10%;
+}
+
+.container h1{
+  margin: 10% 0;
+}
+
+.UoYork{
+  width: 40px;
+}
+
+.skills{
+  background-color: #08163d;
+  color: whitesmoke;
+}
+
+.skill-list{
+  width: 90%;
+  list-style: none;
+  margin: 0 4% 4%;
+}
+
+.skill-list li{
+  padding: 4%;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-list .fas{
+  margin: 0;
+  color: #b8de6f;
+}
+
+.contact .card{
+  margin-bottom: 10%;
+}
+
+.contact p{
+  text-align: center;
+}
+
+.contact a{
+  margin-bottom: 10%;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid;
+  border-radius: 5px/5px;
+  padding: 2% 3%;
+  color: #08163d;
+}
+.contact a:hover{
+  color: whitesmoke;
+  background-color: #08163d;
+}
+
+.footer{
+  padding: 5% 0;
+  text-align: center;
+  background-color: #08163d;
+  color: whitesmoke;
+}
+
+.footer p{
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.footer a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #566387;
+  margin: 5% 2%;
+  line-height: 3;
+}
+
+.footer a:hover{
+  color: whitesmoke;
+}
+
+.nav-button{
+  position: fixed;
+  display: none;
+  top: 1%;
+  right: 1%;
+  margin-bottom: 10%;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.8rem;
+  border: 2px solid;
+  border-radius: 5px/5px;
+  padding: 2% 3%;
+  background-color: #08163d;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.nav-button:hover{
+  color: #08163d;
+  background-color: whitesmoke;
+}
+
+.nav{
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #08163d;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in;
+}
+
+.close{
+  background-color: #08163d;
+  color: whitesmoke;
+  border-style: none;
+  font-size: 2rem;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  cursor: pointer;
+}
+
+.nav h2{
+  color: #566387;
+  margin-top: 2%;
+}
+
+.nav-links{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links a{
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover{
+  color: #566387;
+}
+
+.nav-cover{
+  display: none;
+  position: fixed;
+  z-index: 8;
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+  h1{
+    font-size: 4.5vh;
+  }
+  p{
+    font-size: 3vh;
+  }
+  .header h1{
+    font-size: 4rem;
+  }
+  .header p{
+    font-size: 1.5rem;
+  }
+  .img-home{
+    width: 100%;
+    height: unset;
+  }
+  .page{
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .img-bv{
+    width: 30%;
+    margin: 0;
+  }
+
+  .nav-button{
+    font-size: 1rem;
+    padding: 1% 2%;
+  }
+
+  .nav{
+    width: 40%;
+  }
+
+  .nav-links a{
+    font-size: 2rem;
+  }
+
+  .profile{
+    width: 50%;
+  }
+
+  .carousel{
+    justify-content: center;
+  }
+
+  .carousel-slide{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+  }
+
+  .carousel-img{
+    width: 80%;
+    height: 70%;
+  }
+
+  .carousel-img-3{
+    width: 38%;
+    height: 38%;
+  }
+  .slide-info h3{
+    font-size: 4vh;
+  }
+
+  .carousel-buttons{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carousel-left{
+    width: 10%;
+    height: 100%;
+    font-size: 4vw;
+    padding: 0 0.5%;
+  }
+
+  .carousel-right{
+    width: 10%;
+    height: 100%;
+    font-size: 4vw;
+    padding: 0 0.5%;
+  }
+
+  .employer{
+    width: 30%;
+    border-bottom: none;
+    border-right: 5px solid;
+    margin: 0;
+  }
+
+  .position{
+    width: 70%;
+    margin: 0;
+  }
+
+  .last{
+    margin-bottom: 5%;
+  }
+
+  .card{
+    justify-content: center;
+  }
+
+  .skill-list{
+    width: 40%;
+  }
+
+}
